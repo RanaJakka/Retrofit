@@ -6,4 +6,6 @@ package retrofit.rana.com.retrofit.network;
  */
 
 public class DataRepository {
+
+
 }

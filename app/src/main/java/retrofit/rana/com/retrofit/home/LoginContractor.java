@@ -1,5 +1,6 @@
-package retrofit.rana.com.retrofit;
+package retrofit.rana.com.retrofit.home;
 
+import retrofit.rana.com.retrofit.home.modle.UserLoginDetails;
 import retrofit.rana.com.retrofit.network.DataRepository;
 import retrofit.rana.com.retrofit.network.EnvironmentConstants;
 
@@ -29,7 +30,7 @@ public interface LoginContractor {
 
         boolean checkValidEmail(String emailId);
         boolean checkValidPassword(String password);
-        void doLogin(String email,String password);
+        void doLogin(UserLoginDetails usreLoginDetails);
         String getUserSessions();
 
 

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 26
@@ -34,4 +35,8 @@ dependencies {
     compile "com.squareup.retrofit2:converter-gson:$versions.retrofit"
     compile "com.squareup.okhttp3:logging-interceptor:$versions.okayHttp"
     compile "com.squareup.okhttp3:okhttp:$versions.okayHttp"
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
